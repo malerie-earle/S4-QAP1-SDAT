@@ -37,7 +37,7 @@ public class SuggestionEngineTest {
 
 
     /**
-     * Test case to ensure the suggestion engine generates suggestions for misspelled names.
+     * Test case to ensure the suggestion engine generates suggestions for names.
      */
     @Test
     public void testGenerateSuggestionsForName() {
