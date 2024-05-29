@@ -37,7 +37,7 @@ public class SuggestionEngineTest {
 
 
     /**
-     * Test case to ensure the suggestion engine generates suggestions for misspelled names.
+     * Test case to ensure the suggestion engine generates suggestions for names.
      */
     @Test
     public void testGenerateSuggestionsForName() {
@@ -80,14 +80,14 @@ public class SuggestionEngineTest {
 
 
     /**
-     * Test case to ensure the suggestion engine generates suggestions for words with an empty input or null input
+     * Test case to ensure the suggestion engine doesn't generate suggestions for words with an empty input.
      */
     @Test
     public void testGenerateSuggestionsForEmptyInput() {
         String suggestions = suggestionEngine.generateSuggestions("");
         Assertions.assertFalse(suggestions.isEmpty(), "Expected no suggestions for empty input.");
     }
-    // The code should be adjusted to handle empty input. The test case testGenerateSuggestionsForEmptyOrNullInput()
+    // The code should be adjusted to handle empty input. The test case testGenerateSuggestionsForEmptyInput()
     // should be updated to reflect the changes.
 
 
