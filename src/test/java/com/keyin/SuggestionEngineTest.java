@@ -101,4 +101,20 @@ public class SuggestionEngineTest {
         });
     }
 
+
+    /**
+     * Test case to ensure the suggestion engine doesn't generate suggestions for words with special characters.
+     */
+    @Test
+    public void testSpecialCharacters() {
+        // Test with a word containing special characters
+        String wordWithSpecialChars = "sp€ci@lC#ar$";
+
+        // Generate suggestions for the word containing special characters
+        String suggestions = suggestionEngine.generateSuggestions(wordWithSpecialChars);
+
+        // Verify that suggestions are empty as the word is not in the dictionary
+        Assertions.assertEquals("", suggestions);
+    }
+
 }
